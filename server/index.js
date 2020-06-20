@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
     //if we dont have a specific route handler for a request, then look into client/build dir to find a file which matches the request.
     app.use(express.static('../client/build'));
     //if no files match, then go to the below route handler, which is the last resort
-
+    
     //Express will serve the index.html of it doesn't recognise the route.
     //last route handler.
     const path = require('path');
